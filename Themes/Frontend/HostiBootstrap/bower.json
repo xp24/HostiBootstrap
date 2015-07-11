@@ -1,0 +1,27 @@
+{
+  "name": "HostiBootstrap",
+  "version": "1.0.0",
+  "authors": [
+    "Hostianer Media UG"
+  ],
+  "description": "A Bootstrap Theme for Shopware 5",
+  "keywords": [
+    "bootstrap",
+    "shopware",
+    "theme"
+  ],
+  "license": "MIT",
+  "homepage": "https://blog.hostianer.de",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "frontend/_public/vendors",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "3.3.5"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "HostiBootstrap",
+  "version": "1.0.0",
+  "description": "A Bootstrap Theme for Shopware 5",
+  "keywords": [
+    "bootstrap",
+    "shopware",
+    "theme"
+  ],
+  "private": true,
+  "author": "https://blog.hostianer.de",
+  "license": "MIT",
+  "devDependencies": {
+    "bower": "latest",
+    "grunt": "~0.4.2",
+    "grunt-bower-task": "^0.4.0",
+    "grunt-contrib-clean": "^0.6.0"
+  }
+}
