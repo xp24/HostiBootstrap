@@ -4,25 +4,20 @@ namespace Shopware\Themes\HostiBootstrap;
 
 use Shopware\Components\Form as Form;
 
-class Theme extends \Shopware\Components\Theme
-{
-    protected $name = <<<'SHOPWARE_EOD'
-Bootstrap für Shopware 5
-SHOPWARE_EOD;
+class Theme extends \Shopware\Components\Theme {
+	protected $name = "Bootstrap für Shopware 5";
+	protected $description = "";
+	protected $author = "";
+	protected $license = "";
 
-    protected $description = <<<'SHOPWARE_EOD'
+	protected $javascript = array(
+		// jQuery
+		'vendors/js/jquery/jquery.min.js',
 
-SHOPWARE_EOD;
+		// Bootstrap
+		'vendors/js/bootstrap/tab.js',
+		'vendors/js/bootstrap/modal.js'
+	);
 
-    protected $author = <<<'SHOPWARE_EOD'
-
-SHOPWARE_EOD;
-
-    protected $license = <<<'SHOPWARE_EOD'
-
-SHOPWARE_EOD;
-
-    public function createConfig(Form\Container\TabContainer $container)
-    {
-    }
+	public function createConfig(Form\Container\TabContainer $container) {}
 }

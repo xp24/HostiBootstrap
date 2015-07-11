@@ -22,6 +22,20 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "3.3.5"
+    "bootstrap": "3.3.5",
+    "font-awesome": "*"
+  },
+  "exportsOverride": {
+    "bootstrap": {
+      "less": ["*"],
+      "js": ["js/*.js"]
+    },
+    "jquery": {
+      "js": [ "dist/jquery.min.js"]
+    },
+    "font-awesome": {
+      "less": ["less/*"],
+      "fonts": ["fonts/*"]
+    }
   }
 }
