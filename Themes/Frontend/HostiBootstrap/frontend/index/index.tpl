@@ -23,28 +23,53 @@
 {* Shop header *}
 {block name='frontend_index_navigation'}
 	{block name='frontend_index_top_bar_container'}{/block}
-	{block name='frontend_index_logo_container'}{/block}
+
+    {* Logo container *}
+	{block name='frontend_index_logo_container'}
+    <section class="container">
+        <div class="row">
+            {include file="frontend/index/logo-container.tpl"}
+        </div>
+    </section>
+	{/block}
+
+    {* Maincategories navigation top *}
 	{block name='frontend_index_shop_navigation'}
         {include file="frontend/index/main-navigation.tpl"}
 	{/block}
+
 	{block name='frontend_index_navigation_categories_top'}
 		{block name="frontend_index_navigation_categories_top_include"}{/block}
 	{/block}
 {/block}
 {block name='frontend_index_emotion_loading_overlay'}{/block}
-{block name='frontend_index_breadcrumb'}
-	{block name='frontend_index_breadcrumb_inner'}
-	{/block}
-{/block}
-{block name="frontend_index_content_top"}{/block}
-{block name='frontend_index_content_left'}
-{/block}
-{block name='frontend_index_content_wrapper'}
-	{block name='frontend_index_content'}{/block}
-{/block}
-{block name='frontend_index_content_right'}{/block}
-{block name='frontend_index_left_last_articles'}
-{/block}
+
+<section class="container">
+
+    {* Breadcrumb *}
+    {block name='frontend_index_breadcrumb'}
+        {if count($sBreadcrumb)}
+            {block name='frontend_index_breadcrumb_inner'}
+                {include file='frontend/index/breadcrumb.tpl'}
+            {/block}
+        {/if}
+    {/block}
+
+    {block name="frontend_index_content_top"}{/block}
+    {block name='frontend_index_content_left'}
+    {/block}
+
+    {block name='frontend_index_content_wrapper'}
+            {block name='frontend_index_content'}
+
+            {/block}
+    {/block}
+
+    {block name='frontend_index_content_right'}{/block}
+    {block name='frontend_index_left_last_articles'}
+    {/block}
+</section>
+
 {block name="frontend_index_footer"}
 	{block name="frontend_index_footer_container"}
 	{/block}
