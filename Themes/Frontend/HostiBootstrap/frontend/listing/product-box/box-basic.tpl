@@ -47,6 +47,7 @@
                         {/block}
 
                         {block name='frontend_listing_box_article_price_info'}
+                            <div class="listing-price">
                                 {* Product price - Unit price *}
                                 {block name='frontend_listing_box_article_unit'}
                                     {include file="frontend/listing/product-box/product-price-unit.tpl"}
@@ -56,6 +57,7 @@
                                 {block name='frontend_listing_box_article_price'}
                                     {include file="frontend/listing/product-box/product-price.tpl"}
                                 {/block}
+                            </div>
                         {/block}
 
                         {* Product actions - Compare product, more information, buy now *}
