@@ -7,7 +7,7 @@
         <div class="col-md-12">
             {* Listing *}
             {block name="frontend_listing_index_listing"}
-                test
+                {include file='frontend/listing/listing.tpl'}
             {/block}
         </div>
 
