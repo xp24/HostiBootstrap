@@ -16,7 +16,13 @@ class Theme extends \Shopware\Components\Theme {
 
 		// Bootstrap
 		'vendors/js/bootstrap/tab.js',
-		'vendors/js/bootstrap/modal.js'
+		'vendors/js/bootstrap/modal.js',
+
+		// MatchHeight
+		'vendors/js/matchHeight/jquery.matchHeight-min.js',
+
+		// Custom Js
+		'src/js/jquery.auto-height.js'
 	);
 
 	public function createConfig(Form\Container\TabContainer $container) {}

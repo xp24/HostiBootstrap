@@ -23,7 +23,8 @@
   ],
   "dependencies": {
     "bootstrap": "3.3.5",
-    "font-awesome": "*"
+    "font-awesome": "*",
+    "matchHeight": "*"
   },
   "exportsOverride": {
     "bootstrap": {
@@ -31,11 +32,14 @@
       "js": ["js/*.js"]
     },
     "jquery": {
-      "js": [ "dist/jquery.min.js"]
+      "js": ["dist/jquery.min.js"]
     },
     "font-awesome": {
       "less": ["less/*"],
       "fonts": ["fonts/*"]
+    },
+    "matchHeight": {
+      "js": ["jquery.matchHeight-min.js"]
     }
   }
 }
