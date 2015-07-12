@@ -54,6 +54,7 @@
 
 	{* Stylesheets *}
 	{block name="frontend_index_header_css_screen"}
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 		{{compileLess timestamp={themeTimestamp} output="lessFiles"}}
 		{foreach $lessFiles as $stylesheet}
 			<link href="{$stylesheet}" media="all" rel="stylesheet" type="text/css" />
