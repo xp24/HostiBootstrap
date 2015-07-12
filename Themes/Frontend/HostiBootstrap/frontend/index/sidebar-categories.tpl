@@ -2,7 +2,6 @@
 {function name=categories level=0}
 
         {block name="frontend_index_categories_left_before"}{/block}
-        <div class="list-group">
         {foreach $categories as $category}
 
             {block name="frontend_index_categories_left_entry"}
@@ -24,7 +23,6 @@
                     {/block}
             {/block}
         {/foreach}
-        </div>
         {block name="frontend_index_categories_left_after"}{/block}
 {/function}
 

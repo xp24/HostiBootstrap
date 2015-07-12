@@ -21,7 +21,9 @@
 
             {* Actual include of the categories *}
             {block name='frontend_index_left_categories_inner'}
-                {include file='frontend/index/sidebar-categories.tpl'}
+                <div class="list-group">
+                    {include file='frontend/index/sidebar-categories.tpl'}
+                </div>
             {/block}
         {/block}
 
