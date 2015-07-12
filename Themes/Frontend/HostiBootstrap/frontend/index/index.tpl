@@ -24,7 +24,9 @@
 {block name='frontend_index_navigation'}
 	{block name='frontend_index_top_bar_container'}{/block}
 	{block name='frontend_index_logo_container'}{/block}
-	{block name='frontend_index_shop_navigation'}{/block}
+	{block name='frontend_index_shop_navigation'}
+        {include file="frontend/index/main-navigation.tpl"}
+	{/block}
 	{block name='frontend_index_navigation_categories_top'}
 		{block name="frontend_index_navigation_categories_top_include"}{/block}
 	{/block}
