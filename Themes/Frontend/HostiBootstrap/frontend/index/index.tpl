@@ -24,14 +24,18 @@
 {block name='frontend_index_navigation'}
 	{block name='frontend_index_top_bar_container'}{/block}
 
-    {* Logo container *}
-	{block name='frontend_index_logo_container'}
+    {* Head section *}
+    {block name='frontend_index_logo_container'}
     <section class="container">
         <div class="row">
-            {include file="frontend/index/logo-container.tpl"}
+            {* Logo container *}
+            {block name='frontend_index_logo_container'}
+                {include file="frontend/index/logo-container.tpl"}
+            {/block}
         </div>
     </section>
-	{/block}
+    {/block}
+
 
     {* Maincategories navigation top *}
 	{block name='frontend_index_shop_navigation'}

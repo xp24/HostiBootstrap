@@ -11,11 +11,17 @@
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1 p-l-0" style="padding-left: 0;">
             <ul class="nav navbar-nav" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
                 {strip}
 
-                    {block name='frontend_index_navigation_categories_top_before'}{/block}
+                    {block name='frontend_index_navigation_categories_top_before'}
+                        <li>
+                            <a href="{url controller='index'}" title="{"{config name=shopName}"|escape} - {"{s name='IndexLinkDefault' namespace="frontend/index/index"}{/s}"|escape}">
+                                <i class="fa fa-home"></i>
+                            </a>
+                        </li>
+                    {/block}
 
                     {foreach $sMainCategories as $sCategory}
                         {block name='frontend_index_navigation_categories_top_entry'}

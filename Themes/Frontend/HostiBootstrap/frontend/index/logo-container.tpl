@@ -13,7 +13,7 @@
                 </a>
             {else}
                 <a href="{url controller='index'}" title="{"{config name=shopName}"|escape} - {"{s name='IndexLinkDefault' namespace="frontend/index/index"}{/s}"|escape}">
-                   <h1>
+                   <h1 class="m-b-20">
                        {"{config name=shopName}"|escape}
                    </h1>
                 </a>
