@@ -11,12 +11,6 @@
         {$subCategoryId = 0}
     {/if}
 
-    <div class="sidebar--categories-wrapper"
-         data-subcategory-nav="true"
-         data-mainCategoryId="{$sCategoryStart}"
-         data-categoryId="{$subCategoryId}"
-         data-fetchUrl="{if $subCategoryId}{if $sCustomPage}{url module=widgets controller=listing action=getCustomPage pageId={$subCategoryId}}{else}{url module=widgets controller=listing action=getCategory categoryId={$subCategoryId}}{/if}{/if}">
-
         {* Sidebar category tree *}
         {block name='frontend_index_left_categories'}
 
@@ -27,9 +21,8 @@
 
             {* Actual include of the categories *}
             {block name='frontend_index_left_categories_inner'}
-                <div class="list-group">
-                    {include file='frontend/index/sidebar-categories.tpl'}
-                </div>
+                {include file='frontend/index/sidebar-categories.tpl'}
             {/block}
         {/block}
+
 </aside>
