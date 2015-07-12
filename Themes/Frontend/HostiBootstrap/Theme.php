@@ -22,6 +22,9 @@ class Theme extends \Shopware\Components\Theme {
 		'vendors/js/matchHeight/jquery.matchHeight-min.js',
 
 		// Custom Js
+		'src/js/jquery.class.js',
+		'src/js/jquery.base.js',
+		'src/js/jquery.util.js',
 		'src/js/jquery.auto-height.js'
 	);
 

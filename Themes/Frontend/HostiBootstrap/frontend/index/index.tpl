@@ -2,55 +2,44 @@
 {block name="frontend_index_doctype"}
 <!DOCTYPE html>
 {/block}
-
 {block name='frontend_index_html'}
 <html class="no-js" lang="{s name='IndexXmlLang'}{/s}" itemscope="itemscope" itemtype="http://schema.org/WebPage">
 {/block}
 
 {block name='frontend_index_header'}
-	{include file='frontend/index/header.tpl'}
+    {include file='frontend/index/header.tpl'}
 {/block}
-
 <body class="is--ctl-{controllerName} is--act-{controllerAction}{if $sUserLoggedIn} is--user{/if}{if $sTarget} is--target-{$sTarget}{/if}">
 {block name="frontend_index_no_script_message"}
-	<noscript>
-		{s name="IndexNoscriptNotice"}{/s}
-	</noscript>
+    <noscript>
+        <div class="alert alert-error">{s name="IndexNoscriptNotice"}{/s}</div>
+    </noscript>
 {/block}
 
 {block name='frontend_index_before_page'}{/block}
 
-{* Shop header *}
 {block name='frontend_index_navigation'}
-	{block name='frontend_index_top_bar_container'}{/block}
-
-    {* Head section *}
+    {block name='frontend_index_top_bar_container'}{/block}
     {block name='frontend_index_logo_container'}
-    <section class="container">
-        <div class="row">
-            {* Logo container *}
+        <header class="container">
             {block name='frontend_index_logo_container'}
                 {include file="frontend/index/logo-container.tpl"}
             {/block}
-        </div>
-    </section>
+        </header>
     {/block}
 
-
-    {* Maincategories navigation top *}
-	{block name='frontend_index_shop_navigation'}
+    {block name='frontend_index_shop_navigation'}
         {include file="frontend/index/main-navigation.tpl"}
-	{/block}
+    {/block}
 
-	{block name='frontend_index_navigation_categories_top'}
-		{block name="frontend_index_navigation_categories_top_include"}{/block}
-	{/block}
+    {block name='frontend_index_navigation_categories_top'}
+        {block name="frontend_index_navigation_categories_top_include"}{/block}
+    {/block}
 {/block}
+
 {block name='frontend_index_emotion_loading_overlay'}{/block}
 
 <section class="container">
-
-    {* Breadcrumb *}
     {block name='frontend_index_breadcrumb'}
         {if count($sBreadcrumb)}
             {block name='frontend_index_breadcrumb_inner'}
@@ -64,9 +53,9 @@
     {/block}
 
     {block name='frontend_index_content_wrapper'}
-            {block name='frontend_index_content'}
+        {block name='frontend_index_content'}
 
-            {/block}
+        {/block}
     {/block}
 
     {block name='frontend_index_content_right'}{/block}
@@ -75,28 +64,21 @@
 </section>
 
 {block name="frontend_index_footer"}
-	{block name="frontend_index_footer_container"}
-	{/block}
+    {block name="frontend_index_footer_container"}
+    {/block}
 {/block}
 {block name='frontend_index_body_inline'}{/block}
 
 {block name="frontend_index_header_javascript_jquery_lib"}
-	{compileJavascript timestamp={themeTimestamp} output="javascriptFiles"}
-	{foreach $javascriptFiles as $file}
-		<script src="{$file}"></script>
-	{/foreach}
+    {compileJavascript timestamp={themeTimestamp} output="javascriptFiles"}
+    {foreach $javascriptFiles as $file}
+        <script src="{$file}"></script>
+    {/foreach}
 {/block}
 
 {block name="frontend_index_header_javascript"}
-	{block name="frontend_index_header_javascript_inline"}
-	{/block}
-	{block name="frontend_index_header_javascript_jquery"}
-        <script>
-            $(function() {
-                $('.thumbnail').matchHeight();
-            });
-        </script>
-	{/block}
+    {block name="frontend_index_header_javascript_inline"}{/block}
+    {block name="frontend_index_header_javascript_jquery"}{/block}
 {/block}
 </body>
 </html>

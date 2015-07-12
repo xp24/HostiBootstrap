@@ -1,6 +1,17 @@
-var autoHeight = new function() {
+var AutoHeight = Class.extend({
+    defaults : {
+        allowedControllers: ['listing','detail','search']
+    },
 
-	var __construct = function(that) {
-		$('.listing-wrapper')
-	}
-}
+    init: function(o) {
+        var me = this;
+        me.setOptions(o);
+
+        me.initThumbnails();
+    },
+
+    initThumbnails: function() {
+        var me = this;
+        $('.thumbnail').matchHeight();
+    }
+});

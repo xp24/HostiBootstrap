@@ -8,13 +8,11 @@
         {block name="frontend_listing_listing_container"}
                 {block name="frontend_listing_listing_content"}
                         {* Actual listing *}
-						<div class="listing-wrapper">
                         {block name="frontend_listing_list_inline"}
                                 {foreach $sArticles as $sArticle}
                                     {include file="frontend/listing/box_article.tpl"}
                                 {/foreach}
                         {/block}
-						</div>
                 {/block}
         {/block}
 
