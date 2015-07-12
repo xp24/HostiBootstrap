@@ -32,20 +32,18 @@
 
                         {* Product name *}
                         {block name='frontend_listing_box_article_name'}
-                            <h3>
+                            <h4>
                                 <a href="{$sArticle.linkDetails|rewrite:$sArticle.articleName}"
                                    class="product--title"
                                    title="{$sArticle.articleName|escape}">
                                     {$sArticle.articleName|truncate:50}
                                 </a>
-                            </h3>
+                            </h4>
                         {/block}
 
                         {* Product description *}
                         {block name='frontend_listing_box_article_description'}
-                            <p>
-                                {$sArticle.description_long|strip_tags|truncate:240}
-                            </p>
+
                         {/block}
 
                         {block name='frontend_listing_box_article_price_info'}
