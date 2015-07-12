@@ -91,6 +91,11 @@
 	{block name="frontend_index_header_javascript_inline"}
 	{/block}
 	{block name="frontend_index_header_javascript_jquery"}
+        <script>
+            $(function() {
+                $('.thumbnail').matchHeight();
+            });
+        </script>
 	{/block}
 {/block}
 </body>
