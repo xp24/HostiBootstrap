@@ -3,6 +3,7 @@
 
         {block name="frontend_index_categories_left_before"}{/block}
         {foreach $categories as $category}
+
             {block name="frontend_index_categories_left_entry"}
                     <a class="list-group-item {if $category.flag} active{/if}"
                        href="{$category.link}"
@@ -12,7 +13,7 @@
                         {$category.description}
 
                         {if $category.childrenCount}
-                            <i class="fa fa-arrow-right pull-right"></i>
+                            <i class="fa fa-arrow-circle-o-down pull-right"></i>
                         {/if}
                     </a>
                     {block name="frontend_index_categories_left_entry_subcategories"}
