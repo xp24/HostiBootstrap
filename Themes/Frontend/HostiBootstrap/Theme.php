@@ -18,6 +18,12 @@ class Theme extends \Shopware\Components\Theme {
 		'vendors/js/bootstrap/tab.js',
 		'vendors/js/bootstrap/modal.js',
         'vendors/js/bootstrap/affix.js',
+        'vendors/js/bootstrap/dropdown.js',
+        'vendors/js/bootstrap/modal.js',
+        'vendors/js/bootstrap/button.js',
+        'vendors/js/bootstrap/scrollspy.js',
+        'vendors/js/bootstrap/transition.js',
+        'vendors/js/bootstrap/tooltip.js',
 
 		// MatchHeight
 		'vendors/js/matchHeight/jquery.matchHeight-min.js',
@@ -26,7 +32,8 @@ class Theme extends \Shopware\Components\Theme {
 		'src/js/jquery.class.js',
 		'src/js/jquery.base.js',
 		'src/js/jquery.util.js',
-		'src/js/jquery.auto-height.js'
+		'src/js/jquery.auto-height.js',
+        'src/js/search.js'
 	);
 
 	public function createConfig(Form\Container\TabContainer $container) {}

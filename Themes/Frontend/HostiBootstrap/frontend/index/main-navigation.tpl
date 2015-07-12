@@ -39,6 +39,29 @@
 
                 {/strip}
             </ul>
+
+            <ul class="nav navbar-nav navbar-right m-r-0">
+                <li><a href="">Mein Konto</a> </li>
+            </ul>
+
+            <form class="navbar-form" role="search">
+                <div class="input-group" style="width: 100%;">
+                    <input type="text" class="form-control" placeholder="Suche ...">
+						<span class="input-group-btn" style="width: 1%;">
+							<button type="reset" class="btn btn-default">
+								<span class="fa fa-times">
+									<span class="sr-only">Schließen</span>
+								</span>
+                            </button>
+							<button type="submit" class="btn btn-default">
+								<span class="fa fa-search">
+									<span class="sr-only">Suche</span>
+								</span>
+                            </button>
+						</span>
+                </div>
+            </form>
+
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
