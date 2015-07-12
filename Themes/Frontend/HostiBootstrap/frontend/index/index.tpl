@@ -49,6 +49,8 @@
     {/block}
 
     {block name="frontend_index_content_top"}{/block}
+
+    <div class="row">
     {block name='frontend_index_content_left'}
     {/block}
 
@@ -59,6 +61,8 @@
     {/block}
 
     {block name='frontend_index_content_right'}{/block}
+    </div>
+
     {block name='frontend_index_left_last_articles'}
     {/block}
 </section>

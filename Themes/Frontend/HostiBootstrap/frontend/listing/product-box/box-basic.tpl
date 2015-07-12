@@ -1,7 +1,7 @@
 {namespace name="frontend/listing/box_article"}
 
 {block name="frontend_listing_box_article"}
-    <div class="col-sm-6 col-md-3">
+    <div class="col-sm-6 col-md-4">
     <div class="thumbnail {$productBoxLayout}">
 
         {block name="frontend_listing_box_article_content"}
