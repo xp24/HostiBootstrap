@@ -1,0 +1,39 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.navbar.affix {
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 0;
+  margin-top: 0;
+  padding-top: 0;
+  border-radius: 0;
+  animation: fadeIn 0.5s ease-in;
+  -webkit-animation: fadeIn 0.5s;
+  -webkit-box-shadow: 0 8px 6px -6px #999;
+  -moz-box-shadow: 0 8px 6px -6px #999;
+  box-shadow: 0 8px 6px -6px #999;
+}
+.affix-placeholder {
+  display: none;
+}
+.navbar.affix + .affix-placeholder {
+  display: block;
+  visibility: hidden;
+}

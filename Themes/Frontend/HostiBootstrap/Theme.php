@@ -17,6 +17,7 @@ class Theme extends \Shopware\Components\Theme {
 		// Bootstrap
 		'vendors/js/bootstrap/tab.js',
 		'vendors/js/bootstrap/modal.js',
+        'vendors/js/bootstrap/affix.js',
 
 		// MatchHeight
 		'vendors/js/matchHeight/jquery.matchHeight-min.js',

@@ -77,7 +77,20 @@
 {/block}
 
 {block name="frontend_index_header_javascript"}
-    {block name="frontend_index_header_javascript_inline"}{/block}
+    {block name="frontend_index_header_javascript_inline"}
+        <script>
+            $('.navbar').affix({
+                offset: {
+                    top: 125
+                }
+            });
+
+            var $submenu = $(".navbar");
+
+            // To account for the affixed submenu being pulled out of the content flow.
+            $submenu.after('<div style="width:100%;height:' + $submenu.height() + ';" class="navbar affix-placeholder"></div>');
+        </script>
+    {/block}
     {block name="frontend_index_header_javascript_jquery"}{/block}
 {/block}
 </body>
