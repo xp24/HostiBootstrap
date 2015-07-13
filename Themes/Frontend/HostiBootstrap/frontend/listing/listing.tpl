@@ -62,12 +62,25 @@
     {block name="frontend_listing_listing_container"}
         {block name="frontend_listing_listing_content"}
 
+            <div class="listing"
+            data-ajax-wishlist="true"
+            data-compare-ajax="true"
+            data-infinite-scrolling="true"
+            data-loadPreviousSnippet="{s name="ListingActionsLoadPrevious"}{/s}"
+            data-loadMoreSnippet="{s name="ListingActionsLoadMore"}{/s}"
+            data-categoryId="{$sCategoryContent.id}"
+            data-pages="{$pages}"
+            data-threshold="{$theme.infiniteThreshold}">
+
+
             {* Actual listing *}
             {block name="frontend_listing_list_inline"}
                 {foreach $sArticles as $sArticle}
                     {include file="frontend/listing/box_article.tpl"}
                 {/foreach}
             {/block}
+
+            </div>
 
         {/block}
     {/block}
