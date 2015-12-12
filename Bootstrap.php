@@ -3,8 +3,8 @@ class Shopware_Plugins_Frontend_HostiBootstrap_Bootstrap extends Shopware_Compon
 	private $pluginConfig = '{
   "label": "Hosti Bootstrap",
   "version": "1.0.0",
-  "author": "Hostianer Media UG",
-  "supplier": "Hostianer Media UG",
+  "author": "Hostianer Media UG (haftungsbeschränkt)",
+  "supplier": "Hostianer Media UG (haftungsbeschränkt)",
   "description": "Bootstrap für Shopware 5",
   "support": "Shopware Forum",
   "link": "https://blog.hostianer.de"
